@@ -14,4 +14,7 @@ typeattribute hal_nfc_default data_between_core_and_vendor_violators;
 allow hal_nfc_default nfc_data_file:dir { search };
 allow hal_nfc_default nfc_data_file:file { r_file_perms };
 
+allow cameraserver lineage_data_file:file rw_file_perms;
+allow cameraserver lineage_data_file:dir write;
+
 get_prop(cameraserver, persist_camera_prop)
