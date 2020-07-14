@@ -15,5 +15,11 @@
   {
     "repository"  : "vendor_oneplus",
     "target_path" : "vendor/oneplus"
+  },
+  {
+    "repository"  : "aosip/platform_packages_apps_CustomDoze",
+    "target_path" : "packages/apps/CustomDoze",
+    "branch": "ten",
+    "remote": "github"
   }
 ]
