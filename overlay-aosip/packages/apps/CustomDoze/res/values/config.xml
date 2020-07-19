@@ -16,8 +16,6 @@
 */
 -->
 <resources>
-    <!-- Defines the custom proximity sensor used by various OEMs like OnePlus-->
-    <string name="config_custom_proximity">oneplus.sensor.proximity</string>
     <!-- Defines the custom tilt sensor used by various OEMs like OnePlus-->
-    <string name="config_custom_tilt">oneplus.sensor.pickup</string>
+    <string name="config_custom_tilt">com.oneplus.sensor.pickup</string>
 </resources>
