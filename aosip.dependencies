@@ -13,8 +13,10 @@
     "remote": "github"
   },
   {
-    "repository"  : "vendor_oneplus",
-    "target_path" : "vendor/oneplus"
+    "repository"  : "aosip-devices/vendor_oneplus",
+    "target_path" : "vendor/oneplus",
+    "branch": "ten-cam",
+    "remote": "github"
   },
   {
     "repository"  : "aosip/platform_packages_apps_CustomDoze",
