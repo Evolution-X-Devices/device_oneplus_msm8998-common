@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosip
+    $(LOCAL_PATH)/overlay-evolution
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -167,10 +167,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
-# Custom Doze
-PRODUCT_PACKAGES += \
-    CustomDoze
-
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
@@ -211,9 +207,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
     vendor.display.config@1.0_vendor
 
-# Device
+# Doze
 PRODUCT_PACKAGES += \
-    DeviceParts
+    OnePlusDoze
 
 # DRM
 PRODUCT_PACKAGES += \
