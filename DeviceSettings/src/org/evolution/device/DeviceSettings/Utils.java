@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.aosip.device.DeviceSettings;
+package org.evolution.device.DeviceSettings;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;

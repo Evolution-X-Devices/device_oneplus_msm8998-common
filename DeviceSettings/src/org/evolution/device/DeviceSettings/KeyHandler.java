@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.aosip.device.DeviceSettings;
+package org.evolution.device.DeviceSettings;
 
 import android.Manifest;
 import android.app.NotificationManager;
@@ -49,7 +49,7 @@ import android.view.KeyEvent;
 import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
 
-import com.aosip.device.DeviceSettings.Constants;
+import org.evolution.device.DeviceSettings.Constants;
 
 import vendor.oneplus.camera.CameraHIDL.V1_0.IOnePlusCameraProvider;
 

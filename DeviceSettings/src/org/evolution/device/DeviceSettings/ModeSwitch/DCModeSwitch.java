@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.aosip.device.DeviceSettings;
+package org.evolution.device.DeviceSettings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -23,9 +23,11 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceManager;
 
-public class HBMModeSwitch implements OnPreferenceChangeListener {
+import org.evolution.device.DeviceSettings.DeviceSettings;
 
-    private static final String FILE = "/sys/devices/virtual/graphics/fb0/hbm";
+public class DCModeSwitch implements OnPreferenceChangeListener {
+
+    private static final String FILE = "/proc/flicker_free/flicker_free";
 
     public static String getFile() {
         if (Utils.fileWritable(FILE)) {

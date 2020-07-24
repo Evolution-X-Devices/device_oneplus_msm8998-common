@@ -3,6 +3,6 @@
     public <init>(android.content.Context);
 }
 
--keep class com.aosip.device.DeviceSettings.* {
+-keep class org.evolution.device.DeviceSettings.* {
   *;
 }

@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.aosip.device.DeviceSettings;
+package org.evolution.device.DeviceSettings;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -25,7 +25,7 @@ import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import androidx.preference.PreferenceManager;
 
-import com.aosip.device.DeviceSettings.DeviceSettings;
+import org.evolution.device.DeviceSettings.DeviceSettings;
 
 @TargetApi(24)
 public class DCModeTileService extends TileService {

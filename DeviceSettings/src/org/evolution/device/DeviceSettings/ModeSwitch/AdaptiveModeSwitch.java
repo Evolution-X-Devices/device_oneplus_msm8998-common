@@ -1,5 +1,5 @@
 /*
-* Copyright (C) 2016 The OmniROM Project
+* Copyright (C) 2018 The OmniROM Project
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -15,19 +15,18 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.aosip.device.DeviceSettings;
+package org.evolution.device.DeviceSettings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.SystemProperties;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceManager;
 
-import com.aosip.device.DeviceSettings.DeviceSettings;
+public class AdaptiveModeSwitch implements OnPreferenceChangeListener {
 
-public class DCModeSwitch implements OnPreferenceChangeListener {
-
-    private static final String FILE = "/proc/flicker_free/flicker_free";
+    private static final String FILE = "/sys/devices/virtual/graphics/fb0/adaption_mode";
 
     public static String getFile() {
         if (Utils.fileWritable(FILE)) {

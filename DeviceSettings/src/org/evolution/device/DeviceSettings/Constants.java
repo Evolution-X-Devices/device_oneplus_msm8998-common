@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.aosip.device.DeviceSettings;
+package org.evolution.device.DeviceSettings;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -53,7 +53,7 @@ public class Constants {
     public static final Map<String, Integer> sKeyDefaultMap = new HashMap<>();
 
     public static final String ACTION_UPDATE_SLIDER_POSITION
-            = "com.aosip.device.DeviceSettings.UPDATE_SLIDER_POSITION";
+            = "org.evolution.device.DeviceSettings.UPDATE_SLIDER_POSITION";
     public static final String EXTRA_SLIDER_POSITION = "position";
 
     static {

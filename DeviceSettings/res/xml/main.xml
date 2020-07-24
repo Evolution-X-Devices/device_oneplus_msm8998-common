@@ -38,8 +38,8 @@
             android:summary="@string/panel_category_summary"
             android:persistent="false" >
             <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.aosip.device.DeviceSettings"
-                    android:targetClass="com.aosip.device.DeviceSettings.PanelSettingsActivity" />
+                    android:targetPackage="org.evolution.device.DeviceSettings"
+                    android:targetClass="org.evolution.device.DeviceSettings.PanelSettingsActivity" />
         </Preference>
     </PreferenceCategory>
 
@@ -76,7 +76,7 @@
         android:key="vibrator"
         android:title="@string/category_vibrator">
 
-        <com.aosip.device.DeviceSettings.VibratorStrengthPreference
+        <org.evolution.device.DeviceSettings.VibratorStrengthPreference
             android:key="vib_strength"
             android:title="@string/vib_strength_title_head"
             android:summary="@string/vib_strength_summary_head" />

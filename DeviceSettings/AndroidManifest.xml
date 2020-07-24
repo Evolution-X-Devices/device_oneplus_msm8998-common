@@ -15,7 +15,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           android:sharedUserId="android.uid.system"
-          package="com.aosip.device.DeviceSettings"
+          package="org.evolution.device.DeviceSettings"
           android:versionCode="1"
           android:versionName="1.0" >
 
@@ -25,7 +25,7 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <protected-broadcast android:name="com.aosip.device.DeviceSettings.UPDATE_SLIDER_POSITION" />
+    <protected-broadcast android:name="org.evolution.device.DeviceSettings.UPDATE_SLIDER_POSITION" />
 
     <uses-sdk
         android:minSdkVersion="28"
@@ -57,7 +57,7 @@
         <activity android:name=".KeyHandler" />
 
         <activity
-            android:name="com.aosip.device.DeviceSettings.PanelSettingsActivity"
+            android:name="org.evolution.device.DeviceSettings.PanelSettingsActivity"
             android:exported="true"
             android:label="@string/panel_category_title"
             android:launchMode="singleTask"
@@ -68,7 +68,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.aosip.device.DeviceSettings.Startup" >
+        <receiver android:name="org.evolution.device.DeviceSettings.Startup" >
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -76,7 +76,7 @@
 
         <!-- Quick Settings Tiles -->
         <service
-            android:name="com.aosip.device.DeviceSettings.DCModeTileService"
+            android:name="org.evolution.device.DeviceSettings.DCModeTileService"
             android:icon="@drawable/ic_dimming_off"
             android:label="@string/tile_dc_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -86,7 +86,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.aosip.device.DeviceSettings.PanelModeTileService"
+            android:name="org.evolution.device.DeviceSettings.PanelModeTileService"
             android:icon="@drawable/ic_panel_tile"
             android:label="@string/tile_panel_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -96,7 +96,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.aosip.device.DeviceSettings.HBMModeTileService"
+            android:name="org.evolution.device.DeviceSettings.HBMModeTileService"
             android:icon="@drawable/ic_hbm_tile"
             android:label="@string/tile_hbm_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -106,14 +106,14 @@
             </intent-filter>
         </service>
 
-        <service android:name="com.aosip.device.DeviceSettings.FPSInfoService"
+        <service android:name="org.evolution.device.DeviceSettings.FPSInfoService"
                 android:exported="false">
         </service>
 
         <!-- Search indexing -->
         <provider
             android:name=".ConfigPanelSearchIndexablesProvider"
-            android:authorities="com.aosip.device"
+            android:authorities="org.evolution.device"
             android:multiprocess="false"
             android:grantUriPermissions="true"
             android:permission="android.permission.READ_SEARCH_INDEXABLES"
