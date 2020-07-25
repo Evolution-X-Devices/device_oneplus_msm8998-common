@@ -12,5 +12,9 @@
   {
     "repository"  : "vendor_oneplus",
     "target_path" : "vendor/oneplus"
+  },
+  {
+    "repository"  : "vendor_addons_google_camera",
+    "target_path" : "vendor/addons/google/camera"
   }
 ]
