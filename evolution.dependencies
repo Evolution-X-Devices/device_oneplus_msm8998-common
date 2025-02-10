@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "Lineageos/android_hardware_oneplus",
+    "target_path": "hardware/oneplus",
+    "remote": "github-non-los",
+    "branch": "lineage-23.0"
+  },
+  {
+    "repository": "vendor_oneplus_msm8998-common",
+    "target_path": "vendor/oneplus/msm8998-common"
+  },
+  {
+    "repository": "kernel_oneplus_msm8998",
+    "target_path": "kernel/oneplus/msm8998"
+  },
+  {
+    "repository": "ederevx/android_hardware_qcom-caf_msm8998-4-14",
+    "target_path": "hardware/qcom-caf/msm8998-4-14",
+    "remote": "github-non-los",
+    "branch": "lineage-22.2-msm8998-4-14"
+  }
+]
