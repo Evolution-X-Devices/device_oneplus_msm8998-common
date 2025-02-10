@@ -23,6 +23,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
+# Define mini gapps
+TARGET_USES_MINI_GAPPS := true
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
