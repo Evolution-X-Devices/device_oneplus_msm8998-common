@@ -18,5 +18,11 @@
     "target_path": "hardware/qcom-caf/msm8998-4-14",
     "remote": "github-non-los",
     "branch": "lineage-22.2-msm8998-4-14"
+  },
+  {
+    "repository": "Lineageos/android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep",
+    "remote": "github-non-los",
+    "branch": "lineage-22.2"
   }
 ]
